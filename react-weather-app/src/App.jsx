@@ -1,6 +1,20 @@
+import Search from "./Components/Search";
+import { useState } from "react";
+
 const App = () => {
+
+  const [search, setSearch] = useState('');
+
+  const handleChange = (e) => {
+    setSearch(e.target.value)
+  }
+
   return (
-    <h1>Hello Weather App</h1>
+    <div className="main-container">
+      <Search 
+        search={search}
+        handleChange={handleChange}/>
+    </div>
   )
 }
 
