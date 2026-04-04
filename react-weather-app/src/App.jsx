@@ -41,7 +41,7 @@ const App = () => {
 
   return (
     <div>
-      <div className="bg-black/90 text-white min-h-screen flex flex-col items-center justify-start gap-8 py-20">
+      <div className="bg-linear-to-b from-black to-gray-800  text-white min-h-screen flex flex-col items-center justify-start gap-8 py-20">
         <h1 className="text-4xl font-bold">Weather App</h1>
         <Search 
           search={search}
