@@ -41,13 +41,16 @@ const App = () => {
   }, [debounce])
 
   return (
-    <div className="main-container">
-      <Search 
-        search={search}
-        handleChange={handleChange}/>
-      {error ? error 
-      : country ? <Country country={country}/> 
-      : "Search a country"}
+    <div>
+      <div className="bg-black/90 text-white min-h-screen flex flex-col items-center justify-start gap-8 py-20">
+        <h1 className="text-4xl font-bold">Weather App</h1>
+        <Search 
+          search={search}
+          handleChange={handleChange}/>
+        {error ? error 
+        : country ? <Country country={country}/> 
+        : "Search a country"}
+      </div>
     </div>
   )
 }
