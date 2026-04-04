@@ -34,7 +34,6 @@ const App = () => {
       .catch(error => {
         if(error.response.status == 404) {
           setError(`No '${debounce}' found. Please try again.`)
-          console.log(error);
         }
       })
     }
