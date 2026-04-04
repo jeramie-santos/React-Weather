@@ -14,6 +14,9 @@ const App = () => {
 
   const handleChange = (e) => {
     setSearch(e.target.value)
+    if (e.target.value == "") {
+      setCountry(null)
+    }
   }
 
   useEffect(() => {
@@ -36,9 +39,7 @@ const App = () => {
           setError(`No '${debounce}' found. Please try again.`)
         }
       })
-    } else {
-      setCountry(null);
-    }
+    } 
   }, [debounce])
 
   return (

@@ -7,7 +7,7 @@ const Country = ({country}) => {
     const icon = country.weather[0].icon;
 
     return (
-        <div className="bg-blue-300/60 border-4 border-blue-300/65 pb-10 px-8 flex flex-col gap-8 rounded-4xl shadow-lg shadow-blue-300 w-sm transition ease-in-out hover:-translate-y-1">
+        <div className="bg-blue-300/60 border-2 border-blue-300/65 pb-10 px-8 flex flex-col gap-8 rounded-4xl shadow-lg shadow-blue-300 w-sm transition ease-in-out hover:-translate-y-1">
             <div className="flex flex-col gap-1 justify-center items-center">
                 <div className="">
                     <img className="w-40" src={`https://openweathermap.org/payload/api/media/file/${icon}.png`} alt={`${country.weather[0].description}`} />
