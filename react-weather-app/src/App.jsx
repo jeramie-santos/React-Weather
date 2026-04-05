@@ -29,7 +29,7 @@ const App = () => {
 
   useEffect(() => {
     if (debounce) {
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${debounce}&APPID=${API_KEY}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${debounce}&APPID=${API_KEY}`)
       .then(response => {
         setCountry(response.data)
         setError('')
